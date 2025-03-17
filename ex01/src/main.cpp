@@ -6,13 +6,10 @@
 /*   By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 13:47:09 by okapshai          #+#    #+#             */
-/*   Updated: 2025/03/17 14:02:24 by okapshai         ###   ########.fr       */
+/*   Updated: 2025/03/17 14:30:26 by okapshai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Serializer.hpp"
-
-#include <iostream>
 #include "Serializer.hpp"
 
 int main() {
