@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: Olly <Olly@student.42.fr>                  +#+  +:+       +#+         #
+#    By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/09 17:02:11 by okapshai          #+#    #+#              #
-#    Updated: 2024/12/30 10:01:03 by Olly             ###   ########.fr        #
+#    Updated: 2025/03/17 13:50:25 by okapshai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # NAME
-NAME = diamondtrap
+NAME = serializer
 
 ##############
 # SRCS FILES #
@@ -23,7 +23,7 @@ SRCS_DIR			:=	src/
 # SRCS VARIABLES
 SRCS_FILES 			:= \
 					main.cpp\
-					Serialization.cpp
+					Serializer.cpp
 					
 SRCS				:=	$(addprefix $(SRCS_DIR), $(SRCS_FILES))
 

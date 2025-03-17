@@ -1,24 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/17 13:47:09 by okapshai          #+#    #+#             */
+/*   Updated: 2025/03/17 14:02:24 by okapshai         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "Serializer.hpp"
 
-#include "Serialization.hpp"
+#include <iostream>
+#include "Serializer.hpp"
 
-int main(void)
-{
-    Data* greetings = new Data;
-	greetings->str = "Hello Serialization World!";
-    std::cout << "Base ptr : " << LGREEN << greetings->str << RESET << std::endl;
-    std::cout << "Base ptr address : " << LGREEN << greetings << RESET << std::endl;
+int main() {
 
-    std::cout << "\n";
+    Data myData;
+    myData.name = "Olaf";
+    myData.value = 42;
 
-    uintptr_t rawGreeting = Serialization::serialize(greetings);
-    std::cout << "uintptr address after Serialization : " << ORANGE << rawGreeting << RESET << "\n" << std::endl;
+    Data* originalPtr = &myData;
 
-    //Fetch original ptr Deserialization
-    Data* goodbye = Serialization::deserialize(rawGreeting);
-    std::cout << "Deserialized ptr : " << LGREEN << goodbye->str << RESET << std::endl;
-    std::cout << "Deserialized ptr address : " << LGREEN << goodbye << RESET << std::endl;
-    
-    delete greetings;
-    return (0);
+    std::cout << "Original Data Name: " << MAGENTA << originalPtr->name << RESET << std::endl;
+    std::cout << "Original Data Value: " << MAGENTA << originalPtr->value << RESET << std::endl;
+    std::cout << "Original pointer: " << LGREEN << originalPtr << RESET << std::endl;
+
+    uintptr_t raw = Serializer::serialize(originalPtr);
+    std::cout << "Serialized uintptr_t: " << ORANGE << raw << RESET << std::endl;
+
+    Data* newPtr = Serializer::deserialize(raw);
+    std::cout << "Deserialized pointer: " << LGREEN << newPtr << RESET << std::endl;
+
+    std::cout << "Deserialized Data Name: " << MAGENTA << newPtr->name << RESET << std::endl;
+    std::cout << "Deserialized Data Value: " << MAGENTA << newPtr->value << RESET << std::endl;
+
+    return 0;
 }
