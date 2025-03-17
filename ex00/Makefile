@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: Olly <Olly@student.42.fr>                  +#+  +:+       +#+         #
+#    By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/09 17:02:11 by okapshai          #+#    #+#              #
-#    Updated: 2024/12/30 10:01:03 by Olly             ###   ########.fr        #
+#    Updated: 2025/03/17 12:34:08 by okapshai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # NAME
-NAME = scalarconverter
+NAME = convert
 
 ##############
 # SRCS FILES #
