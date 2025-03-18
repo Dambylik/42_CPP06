@@ -6,35 +6,23 @@
 /*   By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 12:13:46 by okapshai          #+#    #+#             */
-/*   Updated: 2025/03/17 12:40:47 by okapshai         ###   ########.fr       */
+/*   Updated: 2025/03/18 11:27:24 by okapshai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
 
-ScalarConverter::ScalarConverter() {
+ScalarConverter::ScalarConverter() {}
 
-    //std::cout << GREEN << "ScalarConverter default constructor called" << RESET<< std::endl;
-}
-
-ScalarConverter::ScalarConverter( ScalarConverter const & other ) {
-
-   // std::cout << GREEN << "ScalarConverter copy constructor called" << RESET<< std::endl;
-	(*this) = other;
-}
+ScalarConverter::ScalarConverter( ScalarConverter const & other ) { (*this) = other; }
 
 ScalarConverter & ScalarConverter::operator=( ScalarConverter const & other ) {
-
-    //std::cout << GREEN << "ScalarConverter assignment operator called" << RESET<< std::endl;
 
     (void)other;
     return (*this);
 }
 
-ScalarConverter::~ScalarConverter() {
-
-    //std::cout << GREEN << "ScalarConverter destructor called" << RESET << std::endl;
-}
+ScalarConverter::~ScalarConverter() {}
 
 // -------------------------------------------------------------------- Methods
 

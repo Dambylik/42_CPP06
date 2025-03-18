@@ -6,7 +6,7 @@
 #    By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/09 17:02:11 by okapshai          #+#    #+#              #
-#    Updated: 2025/03/17 13:50:25 by okapshai         ###   ########.fr        #
+#    Updated: 2025/03/18 10:52:17 by okapshai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,8 +42,8 @@ OBJS				:=	$(SRCS:$(SRCS_DIR)%.cpp=$(OBJS_DIR)%.o)
 DEPS				:=	$(OBJS:$(OBJS_DIR)%.o=$(OBJS_DIR)%.d)
 
 # FLAGS
-CXX 				:= c++
-CXXFLAGS			:= -Wall -Wextra -Werror -Wshadow -Wno-shadow -std=c++98 #-Wshadow to detect name shadowing issues and -Wno-shadow to suppress them if necessary.
+CXX 				:= 	c++
+CXXFLAGS			:= 	-Wall -Wextra -Werror -std=c++98
 INCFLAGS			:=	-I$(INC_DIR)
 
 # BASH FUNCTIONS

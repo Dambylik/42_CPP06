@@ -6,13 +6,14 @@
 /*   By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 14:28:39 by okapshai          #+#    #+#             */
-/*   Updated: 2025/03/17 14:30:51 by okapshai         ###   ########.fr       */
+/*   Updated: 2025/03/18 12:11:49 by okapshai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include "Base.hpp"
+#include <exception>
 
 class A : public Base {
 

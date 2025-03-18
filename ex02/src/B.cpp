@@ -6,12 +6,10 @@
 /*   By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 14:32:39 by okapshai          #+#    #+#             */
-/*   Updated: 2025/03/17 14:33:09 by okapshai         ###   ########.fr       */
+/*   Updated: 2025/03/18 11:55:43 by okapshai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "B.hpp"
 
-B::~B() {
-    //std::cout << LGREEN << "A derived destructor called" << RESET << std::endl;
-}
+B::~B() {}

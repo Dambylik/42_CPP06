@@ -6,7 +6,7 @@
 /*   By: okapshai <okapshai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 14:26:19 by okapshai          #+#    #+#             */
-/*   Updated: 2025/03/17 14:39:44 by okapshai         ###   ########.fr       */
+/*   Updated: 2025/03/18 12:11:08 by okapshai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <exception>
+#include <cstdlib> 
 
 class Base {
     
